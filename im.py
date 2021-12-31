@@ -1,0 +1,16 @@
+from tkinter import*
+def add():
+    res=int(e1.get())+int(e2.get())
+    myText.set(res)
+master =Tk()
+master.geometry("400x500")
+myText=StringVar()
+Label(master,text="first").place(x=50,y=100)
+Label(master,text="second").place(x=50,y=150)
+Label(master,text="result").place(x=50,y=250)
+result=Label(master,text="",textvariable=myText).place(x=50,y=160)
+e1=Entry(master)
+e1.place(x=100,y=100)
+e2=Entry(master)
+e2.place(x=100,y=150)
+b=Button(master,text="calculate",command=add).place(x=50,y=210)

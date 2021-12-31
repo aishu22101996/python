@@ -1,0 +1,13 @@
+from tkinter import*
+top=tk()
+top.geometry("200x200")
+check var1=int var()
+check var2=int var()
+check var3=int var()
+checkbtn1=Checkbutton(top,text="c",variable=check var1,onvalue=1,offvalue=0,height=2,width=10)
+checkbtn2=Checkbutton(top,text="c++",variable=check var2,onvalue=1,offvalue=0,height=2,width=10)
+checkbtn3=Checkbutton(top,text="java",variable=check var3,onvalue=1,offvalue=0,height=2,width=10)
+checkbtn1.pack()
+checkbtn2.pack()
+checkbtn3.pack()
+top.main loop()
